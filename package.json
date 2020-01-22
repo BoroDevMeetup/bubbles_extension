@@ -1,10 +1,10 @@
 {
-	"name": "bubbles-extension",
-	"displayName": "bubbles-extension",
-	"description": "A VS Code Extension for visualizing the function scope and relationship of your code",
+	"name": "bubbles-ext",
+	"displayName": "Bubbles",
+	"description": "A scope bubble viewer for your code",
 	"version": "0.0.1",
 	"engines": {
-		"vscode": "^1.33.0"
+		"vscode": "^1.41.0"
 	},
 	"categories": [
 		"Other"
@@ -22,14 +22,17 @@
 		]
 	},
 	"scripts": {
-		"postinstall": "node ./node_modules/vscode/bin/install",
-		"test": "node ./node_modules/vscode/bin/test"
+		"test": "node ./test/runTest.js"
 	},
 	"devDependencies": {
-		"typescript": "^3.3.1",
-		"vscode": "^1.1.28",
-		"eslint": "^5.13.0",
-		"@types/node": "^10.12.21",
-		"@types/mocha": "^2.2.42"
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.7",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.41.0",
+		"eslint": "^6.6.0",
+		"glob": "^7.1.5",
+		"mocha": "^6.2.2",
+		"typescript": "^3.6.4",
+		"vscode-test": "^1.2.2"
 	}
 }
